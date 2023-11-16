@@ -1,0 +1,45 @@
+<!-- contact.component.html -->
+
+<div class="contact-container">
+    <h2>Contact Us</h2>
+  
+    <mat-card class="contact-card">
+      <!-- Contact Form -->
+      <form class="mat-form" [formGroup]="contactForm" (ngSubmit)="submitForm()">
+        <mat-form-field appearance="fill">
+          <mat-label>Your Name:</mat-label>
+          <input matInput formControlName="name" required>
+        </mat-form-field>
+  
+        <mat-form-field appearance="fill">
+          <mat-label>Your Email:</mat-label>
+          <input matInput formControlName="email" required>
+        </mat-form-field>
+  
+        <mat-form-field appearance="fill">
+          <mat-label>Message:</mat-label>
+          <textarea matInput formControlName="message" rows="4" required></textarea>
+        </mat-form-field>
+  
+        <!-- <button mat-raised-button color="primary" type="submit">
+            <mat-icon class="mat-icon">send</mat-icon> Send Message
+          </button> -->
+          <button mat-raised-button color="primary" type="submit" [disabled]="!isFormValid()">
+            Send Message
+          </button>
+      </form>
+    </mat-card>
+  
+    <!-- Social Media Links -->
+    <div class="social-links">
+      <h3>Connect with us on Social Media:</h3>
+      <ul>
+        <li><a href="https://facebook.com/example" target="_blank"><i class="fab fa-facebook-f fa-2x" style="color: #3b5998;"></i></a></li>
+      <li><a href="https://twitter.com/example" target="_blank"><i class="fab fa-twitter fa-2x" style="color: #55acee;"></i></a></li>
+      <li><a href="https://instagram.com/example" target="_blank"><i class="fab fa-instagram fa-2x" style="color: #ac2bac;"></i></a></li>
+      <li><a href="https://linkedin.com/company/example" target="_blank"><i class="fab fa-linkedin-in fa-2x" style="color: #0082ca;"></i></a></li>
+      <li><a href="https://youtube.com/c/example" target="_blank"><i class="fab fa-youtube fa-2x" style="color: #ed302f;"></i></a></li>
+      </ul>
+    </div>
+  </div>
+  

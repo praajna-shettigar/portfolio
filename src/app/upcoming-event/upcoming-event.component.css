@@ -1,0 +1,73 @@
+/* upcoming-event.component.css */
+
+.event-container {
+    max-width: 1000px;
+    margin: 2rem auto;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  h2 {
+    color: #333;
+    margin-bottom: 1rem;
+    transition: color 0.3s;
+  }
+  
+  h2:hover {
+    color: #555;
+  }
+  
+  .event-card {
+    margin: 1rem;
+    position: relative;
+    transition: transform 0.3s, z-index 0.3s;
+    width: calc(100% - 2rem);
+    max-width: 800px;
+  }
+  
+  .event-card:hover {
+    transform: scale(1.05);
+    z-index: 1;
+  }
+  
+  mat-card {
+    width: 100%;
+    max-width: 800px;
+  }
+  
+  img {
+    width: 100%; /* Set a constant width */
+    max-width: 100%; /* Ensure the image doesn't exceed its natural size */
+    height: auto; /* Maintain the aspect ratio */
+    object-fit: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+  
+  mat-card-content {
+    padding: 1rem;
+    text-align: left;
+  }
+  
+  h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  p {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  button {
+    margin-top: 1rem;
+  }
+  
+  .mat-icon {
+    margin-right: 0.3rem;
+    vertical-align: middle;
+  }
+  

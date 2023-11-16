@@ -1,0 +1,19 @@
+<!-- header.component.html -->
+<header>
+  <nav>
+    <div class="logo">Ashik Shetty</div>
+    <div class="navbar-icon" (click)="toggleNavbar()">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+    <ul [class.show]="showNavbar">
+      <li (click)="setActiveLink('home')" [ngClass]="{ 'active': activeLink === 'home' }"><a routerLink="/">Home</a></li>
+      <li (click)="setActiveLink('about-me')" [ngClass]="{ 'active': activeLink === 'about-me' }"><a routerLink="/about-me" routerLinkActive="active">About Me</a></li>
+      <li (click)="setActiveLink('upcoming-event')" [ngClass]="{ 'active': activeLink === 'upcoming-event' }"><a routerLink="/upcoming-event" routerLinkActive="active">Upcoming Events</a></li>
+      <li (click)="setActiveLink('skills')" [ngClass]="{ 'active': activeLink === 'skills' }"><a routerLink="/skills" routerLinkActive="active">Skills/Instruments</a></li>
+      <li (click)="setActiveLink('professional-details')" [ngClass]="{ 'active': activeLink === 'professional-details' }"><a routerLink="/professional-details" routerLinkActive="active">Professional Details</a></li>
+      <li (click)="setActiveLink('contact')" [ngClass]="{ 'active': activeLink === 'contact' }"><a routerLink="/contact" routerLinkActive="active">Contact</a></li>
+    </ul>
+  </nav>
+</header>

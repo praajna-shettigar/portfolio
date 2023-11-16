@@ -1,0 +1,98 @@
+/* contact.component.css */
+
+.contact-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    text-align: center;
+  }
+  
+  h2 {
+    color: #333;
+    margin-bottom: 1.5rem;
+  }
+  
+  .contact-card {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1.5rem;
+  }
+  
+  .mat-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .mat-form-field {
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+  
+  button {
+    margin-top: 1.5rem;
+  }
+  
+  .social-links {
+    margin-top: 2rem;
+  }
+  
+  h3 {
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  li {
+    margin: 0 1rem;
+  }
+  
+  a {
+    color: #007BFF;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  a:hover {
+    color: #0056b3;
+  }
+  
+  mat-icon {
+    font-size: 24px;
+  }
+
+  /* contact.component.css */
+
+/* Hover effect for the entire contact card */
+.contact-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  /* Hover effect for form elements inside the contact card */
+  .mat-form-field:hover {
+    background-color: #f0f0f0;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  /* Optional: Hover effect for the submit button */
+  button:hover {
+    background-color: #1976D2;
+    color: white;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+  
+
+  /* button {
+    margin-top: 1.5rem;
+  }
+  
+  .mat-icon {
+    margin-right: 8px; /* Add some spacing between the icon and text */
+  
+  

@@ -1,0 +1,20 @@
+<!-- upcoming-event.component.html -->
+
+<div class="event-container">
+    <h2 class="upcoming-events-heading">Upcoming Events</h2>
+    <div class="event-card" *ngFor="let event of upcomingEvents">
+      <mat-card>
+        <img mat-card-image src="{{ event.imageUrl }}" alt="{{ event.title }}">
+        <mat-card-content>
+          <h3>{{ event.title }}</h3>
+          <p>Date: {{ event.date | date: 'mediumDate' }}</p>
+          <p>Time: {{ event.time }}</p>
+          <p>Location: {{ event.location }}</p>
+          <p>Description: {{ event.description }}</p>
+          <button mat-button color="primary" (click)="redirectToMap(event.location)">
+            <mat-icon class="mat-icon">place</mat-icon> View on Map
+          </button>
+        </mat-card-content>
+      </mat-card>
+    </div>
+</div>

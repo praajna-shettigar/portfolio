@@ -1,0 +1,192 @@
+/* header.component.css */
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  position: relative; /* Add this to make it a reference for absolute positioning */
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+header li a {
+  text-decoration:none;
+  color: white;
+}
+
+/* header li a:hover {
+  text-decoration: underline;
+} */
+
+/* Navbar icon styles */
+.navbar-icon {
+  display: none;
+  cursor: pointer;
+}
+
+.navbar-icon .bar {
+  height: 3px;
+  width: 25px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+/* Media Query for Small Screens */
+@media screen and (max-width: 600px) {
+  header .logo {
+    order: 1; /* Move logo to the top on small screens */
+  }
+
+  header .navbar-icon {
+    display: flex; /* Display navbar icon on small screens */
+    order: 2; /* Move navbar icon below the logo */
+  }
+
+  header ul {
+    display: none; /* Hide the list items by default on smaller screens */
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    z-index: 1;
+  }
+
+  header ul.show {
+    display: flex; /* Show the list items when the 'show' class is added on smaller screens */
+    position: relative; /* Set position to relative to avoid overlapping other content */
+    top: 0; /* Reset the top position */
+  }
+}
+
+
+/* header.component.css */
+
+/* ... existing styles ... */
+
+/* Hamburger icon styles */
+.navbar-icon {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  height: 3px;
+  width: 25px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+/* Media Query for Small Screens */
+@media screen and (max-width: 600px) {
+  header .logo {
+    order: 1; /* Move logo to the top on small screens */
+  }
+
+  header .navbar-icon {
+    display: flex; /* Display hamburger icon on small screens */
+    order: 2; /* Move hamburger icon below the logo */
+  }
+
+  header ul {
+    display: none; /* Hide the list items by default on smaller screens */
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    z-index: 1;
+  }
+
+  header ul.show {
+    display: flex; /* Show the list items when the 'show' class is added on smaller screens */
+    position: relative; /* Set position to relative to avoid overlapping other content */
+    top: 0; /* Reset the top position */
+  }
+}
+
+/* header.component.css */
+
+/* ... existing styles ... */
+
+header li {
+  position: relative;
+}
+
+header li a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s; /* Add smooth color transition */
+}
+
+header li.active a,
+header li.clicked a,
+header li a.router-link-active {
+  color: #14bc11; 
+}
+
+header li a:hover {
+  color: #00cc66; /* Change the color on hover */
+}
+/* Hamburger icon styles */
+.navbar-icon {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  height: 3px;
+  width: 25px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+/* Media Query for Small Screens */
+@media screen and (max-width: 600px) {
+  header ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    z-index: 1;
+  }
+
+  header ul.show {
+    display: flex;
+    position: relative;
+    top: 0;
+  }
+}
+
+header li a.router-link-active {
+  /* text-decoration: underline; */
+  color: #23d15d; /* Change the color when the link is clicked */
+}
+
+header li a:hover {
+  color: #00cc66; /* Change the color on hover */
+}

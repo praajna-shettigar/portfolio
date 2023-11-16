@@ -1,0 +1,11 @@
+<!-- skills.component.html -->
+
+<div class="skills-container">
+    <h2>Skills/Instruments</h2>
+    <div class="skill-item" *ngFor="let skill of skillsList">
+      <img [src]="skill.iconUrl" alt="{{ skill.name }} Icon" class="skill-icon">
+      <h3>{{ skill.name }}</h3>
+      <p class="skill-description">{{ skill.description }}</p>
+    </div>
+  </div>
+  
