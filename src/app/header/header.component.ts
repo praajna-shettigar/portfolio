@@ -18,3 +18,7 @@ export class HeaderComponent {
     this.activeLink = link;
   }
 }
+
+function tst(){
+  return null;
+}
